@@ -1,0 +1,26 @@
+{
+  "name": "node-starter",
+  "description": "Ronald's node-starter package",
+  "main": "server.js",
+  "authors": [
+    "Ronald Ding <ronding@live.unc.edu>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-cookies": "^1.6.5",
+    "angular-ui-router": "^1.0.5",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "angular-bootstrap": "^2.5.0"
+  }
+}

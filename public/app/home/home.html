@@ -1,0 +1,79 @@
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<img class="logo" ng-src="img/logo.png"></img>
+		</div>
+	</div>
+	<div class="row">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div ng-hide="showCreateAccount">
+					<div class="login-text">
+						Login
+					</div>
+					<div class="row form-input-block">
+						<div class="col-xs-12">
+							<label>Email</label>
+							<input ng-model="loginEmail" class="form-control" type="email">
+						</div>
+					</div>
+					<div class="row form-input-block">
+						<div class="col-xs-12">
+							<label>Password</label>
+							<input ng-model="loginPassword" class="form-control" type="password">
+						</div>
+					</div>
+					<div class="row center-text">
+						<button class="btn btn-success" ng-click="login()">Login</button>
+						<button class="btn btn-info" ng-click="showCreateAccount = true">Create New Account</button>
+					</div>
+				</div>
+				<div ng-show="showCreateAccount">
+					<div class="login-text">
+						Create New Account
+					</div>
+					<div class="row form-input-block">
+						<div class="col-xs-12">
+							<label>First Name</label>
+							<input ng-model="createFirstName" class="form-control" type="text">
+						</div>
+					</div>
+					<div class="row form-input-block">
+						<div class="col-xs-12">
+							<label>Last name</label>
+							<input ng-model="createLastName" class="form-control" type="text">
+						</div>
+					</div>
+					<div class="row form-input-block">
+						<div class="col-xs-12">
+							<label>Email</label>
+							<input ng-model="createEmail" class="form-control" type="email">
+						</div>
+					</div>
+					<div class="row form-input-block">
+						<div class="col-xs-12">
+							<label>Password</label>
+							<input ng-model="createPassword" class="form-control" type="email">
+						</div>
+					</div>
+					<div class="row form-input-block">
+						<div class="col-xs-12">
+							<label>Confirm Password</label>
+							<input ng-model="createConfirmPassword" class="form-control" type="email">
+						</div>
+					</div>
+					<div class="row form-input-block">
+						<div class="col-xs-12">
+							<label>Phone Number</label>
+							<input ng-model="createPhoneNumber" class="form-control" type="email">
+						</div>
+					</div>
+					<div class="row center-text">
+						<button class="btn btn-info" ng-click="createAccount()">Create</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
